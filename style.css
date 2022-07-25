@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body,
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    background: url("img/11_background.png");
+    position: fixed;
+}
+
+#ground {
+    background: url("img/01_ground.png") repeat-x 0 bottom;
+    animation: loop 3s linear infinite;
+    z-index: 10;
+}
+
+#treesBushes {
+    background: url("img/02_trees and bushes.png") repeat-x 0 bottom;
+    animation: loop 6s linear infinite;
+    z-index: 9;
+}
+
+#distantTrees {
+    background: url("img/03_distant_trees.png") repeat-x 0 bottom;
+    animation: loop 8s linear infinite;
+    z-index: 8;
+}
+
+#bushes {
+    background: url("img/04_bushes.png") repeat-x 0 bottom;
+    animation: loop 10s linear infinite;
+    z-index: 7;
+}
+
+#firstHills {
+    background: url("img/05_hill1.png") repeat-x 0 bottom;
+    animation: loop 12s linear infinite;
+    z-index: 6;
+}
+
+#secondHills {
+    background: url("img/06_hill2.png") repeat-x 0 bottom;
+    animation: loop 14s linear infinite;
+    z-index: 5;
+}
+
+#bigClouds {
+    background: url("img/07_huge_clouds.png") repeat-x 0 bottom;
+    animation: loop 16s linear infinite;
+    z-index: 4;
+}
+
+#clouds {
+    background: url("img/08_clouds.png") repeat-x 0 bottom;
+    animation: loop 8s linear infinite;
+    z-index: 3;
+}
+
+#distantClouds {
+    background: url("img/09_distant_clouds1.png") repeat-x 0 bottom;
+    animation: loop 10s linear infinite;
+    z-index: 2;
+}
+
+#ground,
+#treesBushes,
+#distantTrees,
+#bushes,
+#firstHills,
+#secondHills,
+#bigClouds,
+#clouds,
+#distantClouds {
+    width: 200%;
+    height: 100%;
+    background-size: 30%;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
+@keyframes loop {
+    from { transform: translateX(0); }
+    to { transform: translateX(-30%); }
+}
