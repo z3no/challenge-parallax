@@ -7,8 +7,15 @@ So first I want to see how this parallax is going to work, how it ticks. So I wi
 
 ## To DO
 - Animate the background
-  - [ ] Ground moves fastest
-  - [ ] Place the other background images and see what fits best
-  - [ ] The sky is static
-- [ ] A page with a moving background that looks natural
-- Enhance the page to my liking
+  - [x] Ground moves fastest
+  - [x] Place the other background images and see what fits best
+    - [x] Apparently you can just place them in order
+  - [x] The sky is static
+- [x] A page with a moving background that looks natural
+- [x] Add the running character
+  - [x] Make him jump
+  - [x] Change his appearance to a jumping character
+- [x] Add an obstacle
+  - [x] Make it go from left to right
+- [ ] Add collision
+- [ ] Check if you hit the obstacle
