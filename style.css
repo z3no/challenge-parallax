@@ -11,94 +11,97 @@ body,
 }
 
 #container {
-    background: url("img/11_background.png");
-    position: fixed;
+    background-color: #577277;
 }
 
 /*****************************
   *** PARALLAX BACKGROUND ***
  *****************************/
 #ground {
-    background: url("img/01_ground.png") repeat-x 0 bottom;
-    animation: loop 3s linear infinite;
-    z-index: 10;
-}
-
-#treesBushes {
-    background: url("img/02_trees and bushes.png") repeat-x 0 bottom;
-    animation: loop 6s linear infinite;
-    z-index: 9;
-}
-
-#distantTrees {
-    background: url("img/03_distant_trees.png") repeat-x 0 bottom;
-    animation: loop 8s linear infinite;
-    z-index: 8;
-}
-
-#bushes {
-    background: url("img/04_bushes.png") repeat-x 0 bottom;
-    animation: loop 10s linear infinite;
-    z-index: 7;
-}
-
-#firstHills {
-    background: url("img/05_hill1.png") repeat-x 0 bottom;
-    animation: loop 12s linear infinite;
-    z-index: 6;
-}
-
-#secondHills {
-    background: url("img/06_hill2.png") repeat-x 0 bottom;
-    animation: loop 14s linear infinite;
-    z-index: 5;
-}
-
-#bigClouds {
-    background: url("img/07_huge_clouds.png") repeat-x 0 bottom;
-    animation: loop 16s linear infinite;
-    z-index: 4;
-}
-
-#clouds {
-    background: url("img/08_clouds.png") repeat-x 0 bottom;
-    animation: loop 8s linear infinite;
-    z-index: 3;
-}
-
-#distantClouds {
-    background: url("img/09_distant_clouds1.png") repeat-x 0 bottom;
-    animation: loop 10s linear infinite;
-    z-index: 2;
-}
-
-#evenMoreClouds {
-    background: url("img/10_distant_clouds.png") repeat-x 0 bottom;
-    animation: loop 13s linear infinite;
+    background: url("img/post_soviet_city_parallax/layer_1_ground.png") repeat-x 0 bottom;
+    animation: loop 4s linear infinite;
     z-index: 1;
 }
 
+#stars {
+    background: url("img/post_soviet_city_parallax/layer_2_stars.png") repeat-x 0 bottom;
+    animation: loop 24s linear infinite;
+    z-index: 2;
+}
+
+#moon {
+    background: url("img/post_soviet_city_parallax/layer_3_moon.png") repeat-x 0 bottom;
+    animation: loop 30s linear infinite;
+    z-index: 3;
+}
+
+#clouds {
+    background: url("img/post_soviet_city_parallax/layer_4_clouds_1.png") repeat-x 0 bottom;
+    animation: loop 20s linear infinite;
+    z-index: 5;
+}
+
+#clouds2 {
+    background: url("img/post_soviet_city_parallax/layer_5_clouds_2.png") repeat-x 0 bottom;
+    animation: loop 22s linear infinite;
+    z-index: 6;
+}
+
+#buildings-3 {
+    background: url("img/post_soviet_city_parallax/layer_6_far_buildings.png") repeat-x 0 bottom;
+    animation: loop 18s linear infinite;
+    z-index: 7;
+}
+
+#buildings-2 {
+    background: url("img/post_soviet_city_parallax/layer_7_bg_buildings.png") repeat-x 0 bottom;
+    animation: loop 14s linear infinite;
+    z-index: 8;
+}
+
+#buildings {
+    background: url("img/post_soviet_city_parallax/layer_8_fg_buildings.png") repeat-x 0 bottom;
+    animation: loop 10s linear infinite;
+    z-index: 9;
+}
+
+#wall {
+    background: url("img/post_soviet_city_parallax/layer_9_wall.png") repeat-x 0 bottom;
+    animation: loop 4s linear infinite;
+    z-index: 10;
+}
+
+
 #ground,
-#treesBushes,
-#distantTrees,
-#bushes,
-#firstHills,
-#secondHills,
-#bigClouds,
-#clouds,
-#distantClouds,
-#evenMoreClouds {
-    width: 200%;
+#buildings-3,
+#buildings-2,
+#buildings,
+#wall {
+    width: 210%;
     height: 100%;
-    background-size: 30%;
+    background-size: 50%;
     bottom: 0;
     left: 0;
-    position: fixed;
+    position: absolute;
 }
+
+#stars,
+#moon,
+#clouds,
+#clouds2 {
+    width: 210%;
+    height: 100%;
+    background-size: 50%;
+    bottom: 15%;
+    left: 0;
+    position: absolute;
+}
+
+
 
 @keyframes loop {
     from { transform: translateX(0); }
-    to { transform: translateX(-30%); }
+    to { transform: translateX(-50%); }
 }
 
 /*****************************
