@@ -3,12 +3,21 @@ let character = document.getElementById("character")
 
 // jump function
 function jump() {
-    character.classList.add("animate-jump")
-    character.style.backgroundImage = "url(img/jump.gif)"
+    if (character.classList !== "animate") {
+        character.classList.add("animate-jump")
+        character.style.backgroundImage = "url(img/jump.gif)"
+    }
     setTimeout(function (){
         character.classList.remove("animate-jump")
-        character.style.backgroundImage = "url(img/run.gif)"
+        character.removeAttribute("style")
     }, 600)
 }
 
-character.addEventListener('click', jump);
+//assign function to keycode spacebar
+function control(e) {
+    if (e.keyCode === 32) {
+        jump()
+    }
+}
+
+document.addEventListener('keydown', control)
