@@ -50,7 +50,7 @@ function jump() {
         }
         // jump up
         console.log('up');
-        position += 32;
+        position += 50;
         count++
         position = position * gravity;
         character.style.bottom = position + 'px';
@@ -60,7 +60,7 @@ function jump() {
 
 //generate obstacles and at random
 function generateObstacles() {
-    let randomTime = Math.random() * 5000;
+    let randomTime = Math.random() * 5500;
     let obstaclePosition = 2000;
     const obstacle = document.createElement('div');
     if(!gameOver){
@@ -70,7 +70,7 @@ function generateObstacles() {
     obstacle.style.left = obstaclePosition + 'px';
 
     let timerId = setInterval(function (){
-        if (obstaclePosition > 0 && obstaclePosition < 60 && position < 60){
+        if (obstaclePosition > 160 && obstaclePosition < 200 && position < 200){
             clearInterval(timerId);
             alert.innerHTML = 'Game Over'
             gameOver = true;
